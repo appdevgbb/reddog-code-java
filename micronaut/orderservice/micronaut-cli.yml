@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.microsoft.gbb.reddog
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [ annotation-api, app-name, http-client, java, java-application, jax-rs, junit, maven, netty-server, openapi, readme, serialization-jsonp, shade, slf4j-simple, spring, spring-boot, spring-web, swagger-ui, tracing-jaeger, yaml ]
