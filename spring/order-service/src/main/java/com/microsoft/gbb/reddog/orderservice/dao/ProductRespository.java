@@ -7,18 +7,20 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+
 @Component
 public class ProductRespository
 {
     @Value("classpath:${data.local.PRODUCT_DEFINITION_FILE}")
     Resource productResource;
 
-    public Product[] getAllProducts()
+    public ArrayList<Product> getAllProducts()
     {
         ObjectMapper mapper = new ObjectMapper();
         try
         {
-            return mapper.readValue(productResource.getInputStream(), new TypeReference<Product[]>() {});
+            return mapper.readValue(productResource.getInputStream(), new TypeReference<ArrayList<Product>>() {});
         }
         catch (Exception e)
         {

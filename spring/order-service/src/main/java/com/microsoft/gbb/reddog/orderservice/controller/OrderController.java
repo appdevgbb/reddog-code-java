@@ -2,6 +2,7 @@ package com.microsoft.gbb.reddog.orderservice.controller;
 
 import com.microsoft.gbb.reddog.orderservice.exception.OrderNotFoundException;
 import com.microsoft.gbb.reddog.orderservice.model.CustomerOrder;
+import com.microsoft.gbb.reddog.orderservice.model.OrderSummary;
 import com.microsoft.gbb.reddog.orderservice.service.OrderService;
 import io.opentelemetry.extension.annotations.WithSpan;
 import org.springframework.http.HttpStatus;
@@ -22,7 +23,7 @@ public class OrderController {
     @ResponseStatus(HttpStatus.CREATED)
     @CrossOrigin(origins = "*")
     @WithSpan("createOrder")
-    public String order(@RequestBody CustomerOrder order) {
+    public OrderSummary order(@RequestBody CustomerOrder order) {
         if (null == order) {
             throw new OrderNotFoundException("Order is null");
         }
