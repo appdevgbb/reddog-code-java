@@ -1,5 +1,9 @@
 ## Red Dog Demo - Azure Application Innovation Scenario
 
+## :warning: :construction: Java version of [reddog-code](https://github.com/Azure/reddog-code) is WIP
+
+######  :bell: Watch this repo to get notified with updates 
+
 ### Background
 
 Microservices can be hard. But, while being exceedingly difficult to architect they have become an increasingly popular architecture pattern. As developers begin to migrate their existing monolithic codebases to a microservices system, they spend a lot of their time dealing with the inherent challenges presented by distributed applications, such as state management and service invocation.
