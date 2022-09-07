@@ -1,4 +1,4 @@
-package com.microsoft.gbb.reddog.orderservice.config;
+package com.microsoft.gbb.reddog.virtualcustomers.config;
 
 import io.opentelemetry.api.trace.Span;
 

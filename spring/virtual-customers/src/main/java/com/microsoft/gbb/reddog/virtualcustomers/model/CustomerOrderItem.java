@@ -1,4 +1,4 @@
-package com.microsoft.gbb.reddog.orderservice.model;
+package com.microsoft.gbb.reddog.virtualcustomers.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

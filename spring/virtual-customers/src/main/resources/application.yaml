@@ -4,9 +4,6 @@ spring:
   banner:
     location: static/banner.txt
 data:
-  local:
-    PRODUCT_DEFINITION_FILE: static/DrugStoreProducts-categorized.json
-  ORDER_SERVICE_ID: order-service
   STORE_ID: ${STORE_ID:Redmond}
   MAX_ITEM_QUANTITY: 1
   MAX_UNIQUE_ITEMS_PER_ORDER: 10
@@ -30,7 +27,7 @@ management:
     health:
       show-details: ALWAYS
 server:
-  port: 8080
+  port: 8081
 org:
   jobrunr:
     background-job-server:
