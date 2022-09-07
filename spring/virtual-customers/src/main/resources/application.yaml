@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: virtual-customers
+  banner:
+    location: static/banner.txt
+data:
+  STORE_ID: ${STORE_ID:Redmond}
+  MAX_ITEM_QUANTITY: 1
+  MAX_UNIQUE_ITEMS_PER_ORDER: 10
+  MIN_SEC_TO_PLACE_ORDER: 1
+  MAX_SEC_TO_PLACE_ORDER: 3
+  MIN_SEC_BETWEEN_ORDERS: 1
+  MAX_SEC_BETWEEN_ORDERS: 3
+  NUM_ORDERS: -1
+  DAPR_HTTP_PORT: 3500
+messaging:
+  pubsub:
+    enabled: true
+    TOPIC_NAME: virtual-customers-topic
+    SUB_NAME: pubsub
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+server:
+  port: 8081
+org:
+  jobrunr:
+    background-job-server:
+        enabled: true
+    dashboard:
+      enabled: true
+---
+spring:
+  profiles: dev
+  application:
+    name: virtual-customers
