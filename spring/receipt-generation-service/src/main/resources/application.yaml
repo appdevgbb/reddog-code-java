@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: receipt-generation-service
+  banner:
+    location: static/banner.txt
+data:
+  local:
+    PRODUCT_DEFINITION_FILE: static/DrugStoreProducts-categorized.json
+messaging:
+  pubsub:
+    enabled: true
+    TOPIC_NAME: receipt-generation-service-topic
+    SUB_NAME: pubsub
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+server:
+  port: 8082
+
+---
+spring:
+  profiles: dev
+  application:
+    name: receipt-generation-service
