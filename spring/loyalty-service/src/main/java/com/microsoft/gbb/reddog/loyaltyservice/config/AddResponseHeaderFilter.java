@@ -1,4 +1,4 @@
-package com.microsoft.gbb.reddog.receiptgenerationservice.config;
+package com.microsoft.gbb.reddog.loyaltyservice.config;
 
 import io.opentelemetry.api.trace.Span;
 

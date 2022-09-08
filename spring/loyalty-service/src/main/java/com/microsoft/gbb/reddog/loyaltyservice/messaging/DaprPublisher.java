@@ -1,4 +1,4 @@
-package com.microsoft.gbb.reddog.receiptgenerationservice.messaging;
+package com.microsoft.gbb.reddog.loyaltyservice.messaging;
 
 import io.dapr.client.DaprClient;
 import io.dapr.client.DaprClientBuilder;

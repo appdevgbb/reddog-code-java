@@ -1,4 +1,4 @@
-package com.microsoft.gbb.reddog.receiptgenerationservice;
+package com.microsoft.gbb.reddog.loyaltyservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
