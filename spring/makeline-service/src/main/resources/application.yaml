@@ -1,15 +1,13 @@
 spring:
   application:
-    name: loyalty-service
+    name: makeline-service
   banner:
     location: static/banner.txt
 data:
-  local:
-    PRODUCT_DEFINITION_FILE: static/DrugStoreProducts-categorized.json
 messaging:
   pubsub:
     enabled: true
-    TOPIC_NAME: loyalty-service-topic
+    TOPIC_NAME: makeline-service-topic
     SUB_NAME: pubsub
 management:
   endpoints:
@@ -20,10 +18,10 @@ management:
     health:
       show-details: ALWAYS
 server:
-  port: 8083
+  port: 8084
 
 ---
 spring:
   profiles: dev
   application:
-    name: loyalty-service
+    name: makeline-service
