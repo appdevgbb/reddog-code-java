@@ -1,4 +1,4 @@
-package com.microsoft.gbb.reddog.receiptgenerationservice.model;
+package com.microsoft.gbb.reddog.loyaltyservice.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;

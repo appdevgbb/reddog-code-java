@@ -1,4 +1,4 @@
-package com.microsoft.gbb.reddog.receiptgenerationservice.exception;
+package com.microsoft.gbb.reddog.loyaltyservice.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;

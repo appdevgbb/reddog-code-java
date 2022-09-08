@@ -1,7 +1,7 @@
-package com.microsoft.gbb.reddog.receiptgenerationservice.service;
+package com.microsoft.gbb.reddog.loyaltyservice.service;
 
-import com.microsoft.gbb.reddog.receiptgenerationservice.messaging.DaprPublisher;
-import com.microsoft.gbb.reddog.receiptgenerationservice.model.OrderSummary;
+import com.microsoft.gbb.reddog.loyaltyservice.messaging.DaprPublisher;
+import com.microsoft.gbb.reddog.loyaltyservice.model.OrderSummary;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,8 +1,8 @@
-package com.microsoft.gbb.reddog.receiptgenerationservice.controller;
+package com.microsoft.gbb.reddog.loyaltyservice.controller;
 
-import com.microsoft.gbb.reddog.receiptgenerationservice.exception.LoyaltySaveException;
-import com.microsoft.gbb.reddog.receiptgenerationservice.model.OrderSummary;
-import com.microsoft.gbb.reddog.receiptgenerationservice.service.LoyaltyService;
+import com.microsoft.gbb.reddog.loyaltyservice.exception.LoyaltySaveException;
+import com.microsoft.gbb.reddog.loyaltyservice.model.OrderSummary;
+import com.microsoft.gbb.reddog.loyaltyservice.service.LoyaltyService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
