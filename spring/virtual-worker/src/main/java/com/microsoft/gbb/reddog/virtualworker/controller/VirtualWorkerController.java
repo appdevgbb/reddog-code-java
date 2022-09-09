@@ -8,18 +8,16 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class VirtualWorkerController {
 
-    private final JobScheduler jobScheduler;
     private final VirtualWorkerService orderCreationJobService;
 
-    public VirtualWorkerController(JobScheduler jobScheduler, VirtualWorkerService orderCreationJobService1) {
-        this.jobScheduler = jobScheduler;
+    public VirtualWorkerController(VirtualWorkerService orderCreationJobService1) {
         this.orderCreationJobService = orderCreationJobService1;
     }
 
     @PostMapping(value = "/orders")
     @CrossOrigin(origins = "*")
     public String checkOrders() {
-        jobScheduler.enqueue(orderCreationJobService::checkOrders);
-        return "Job started";
+        orderCreationJobService.checkOrders();
+        return "WIP";
     }
 }
