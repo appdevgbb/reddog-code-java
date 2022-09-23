@@ -16,6 +16,10 @@
     <properties>
         <java.version>17</java.version>
         <opentelemetry.version>1.6.0</opentelemetry.version>
+        <dapr-sdk-springboot.version>1.6.0</dapr-sdk-springboot.version>
+        <dapr-sdk.version>1.6.0</dapr-sdk.version>
+        <springdoc-openapi-ui.version>1.6.9</springdoc-openapi-ui.version>
+        <okhttp.version>4.10.0</okhttp.version>
     </properties>
     <dependencies>
         <dependency>
@@ -44,7 +48,7 @@
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
-            <version>1.6.9</version>
+            <version>${springdoc-openapi-ui.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -54,17 +58,17 @@
         <dependency>
             <groupId>io.dapr</groupId>
             <artifactId>dapr-sdk</artifactId>
-            <version>1.6.0</version>
+            <version>${dapr-sdk.version}</version>
         </dependency>
         <dependency>
             <groupId>io.dapr</groupId>
             <artifactId>dapr-sdk-springboot</artifactId>
-            <version>1.5.0</version>
+            <version>${dapr-sdk-springboot.version}</version>
         </dependency>
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
-            <version>4.10.0</version>
+            <version>${okhttp.version}</version>
         </dependency>
         <dependency>
             <groupId>io.opentelemetry</groupId>
